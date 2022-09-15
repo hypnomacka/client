@@ -60,7 +60,6 @@ public class ModButton {
 			   System.out.println("toggled " + m.name);
 			}
 			if(button == 1) {
-				System.out.println("GAY");
 				//if(m.settings.size()>1)
 				mc.displayGuiScreen(new SettingGUI(m, new ClickGUI()));
 			}
