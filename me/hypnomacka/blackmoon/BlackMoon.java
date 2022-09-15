@@ -10,7 +10,7 @@ import net.minecraft.client.Minecraft;
 
 public class BlackMoon {
 	
-	public String NAME = "BlackMoon", NAMEJAP = "黒�?�月", VERSION = "1.0", AUTHOR = "hypnomacka";
+	public String NAME = "BlackMoon", VERSION = "1.0", AUTHOR = "hypnomacka";
 	public static BlackMoon INSTANCE = new BlackMoon();
 	public Minecraft mc = Minecraft.getMinecraft();
 	
@@ -20,13 +20,13 @@ public class BlackMoon {
 	public void startup() {
 		eventManager = new EventManager();
 		hudManager = new HudManager();
-		System.out.println("Launching " + NAME + "/" + NAMEJAP + VERSION + " by " + AUTHOR);
+		System.out.println("Launching " + NAME + VERSION + " by " + AUTHOR);
 		
 		eventManager.register(this);
 	}
 	
 	public void shutdown() {
-		System.out.println("Shutting down " + NAME + "/" + NAMEJAP + "-" + VERSION + " by " + AUTHOR);
+		System.out.println("Shutting down " + NAME + "-" + VERSION + " by " + AUTHOR);
 		
 		eventManager.unregister(this);
 	}
